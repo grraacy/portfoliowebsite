@@ -7,8 +7,14 @@ body {
   margin: 0;
 }
 
-div {
+#testtext {
   color: white;
   border-radius: 8px;
   font-size: xx-large;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+
+#testtext:hover {
+    transform:rotate(360deg);
 }
