@@ -1,10 +1,50 @@
 body {
   background-color: black;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.header img.logoImage {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  height: 80px;
+  width: auto;
+}
+
+.center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: calc(100vh - 80px); 
 }
 
 #testtext {
@@ -12,9 +52,14 @@ body {
   border-radius: 8px;
   font-size: xx-large;
   cursor: pointer;
+  margin-left: 10px;
   transition-duration: 2s;
 }
 
 #testtext:hover {
-    transform:rotate(360deg);
+  transform: rotate(360deg);
+}
+
+* {
+  box-sizing: border-box;
 }
