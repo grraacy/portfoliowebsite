@@ -13,3 +13,7 @@ document.getElementById("aboutMe").addEventListener("click", () => {
 document.getElementById("contact").addEventListener("click", () => {
     console.log("contact me wink wink");
 })
+
+document.getElementById("upButton").addEventListener("click", () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });   
+})

@@ -34,6 +34,21 @@ body {
   display: none;
 }
 
+.graveyardImg {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+}
+
+.graveyardUpImg {
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90px;
+  z-index: 100;
+}
+
 @media (max-width: 400px) {
   .hailingGuh {display: none;}
   .smallhailingGuh {display:block;}
@@ -100,8 +115,9 @@ body {
   transition-duration: 2s;
 }
 
+#testtext:active,
 #testtext:hover {
-  transform: rotate(360deg);
+  transform: rotate(7200deg);
 }
 
 #home {
